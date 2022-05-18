@@ -2,16 +2,16 @@
 
 
 ### Get all dogs/cats
-GET {{host}}/?fields=id,name&offset=0&limit=10 HTTP/1.1
+GET {{host}}/?fields=id,name&offset=0&limit=10&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImVtZW0iLCJpZCI6MTAwLCJleHAiOjE2NTI5MzkxNjF9.BE-KrzczQrPR7Ba2_pHTakF7ae29IEXXeEXMDGqUq_o HTTP/1.1
 
 
 ### Create new dogs/cats
-POST {{host}}/ HTTP/1.1
+POST {{host}}/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImVtZW0iLCJpZCI6MTAwLCJleHAiOjE2NTI5MzkxNjF9.BE-KrzczQrPR7Ba2_pHTakF7ae29IEXXeEXMDGqUq_o HTTP/1.1
 Content-Type: application/json
 
 {
-    "id": 1,
-    "name": "Blackie3"
+    "id": 2,
+    "name": "Whitey"
 }
 
 
