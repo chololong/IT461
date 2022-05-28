@@ -1,4 +1,4 @@
-@host = http://127.0.0.1:6000/v1/cats
+@host = http://127.0.0.1:3000/v1/cats
 
 
 ### Get all dogs/cats

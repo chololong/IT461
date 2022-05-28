@@ -1,17 +1,16 @@
-@host = http://127.0.0.1:6000/v1/dogs
-
+@host = http://127.0.0.1:8080/v1/dogs
 
 ### Get all dogs
 GET {{host}}/?fields=id,name&offset=0&limit=2&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImVtZW0iLCJpZCI6MTAwLCJleHAiOjE2NTI5MzkxNjF9.BE-KrzczQrPR7Ba2_pHTakF7ae29IEXXeEXMDGqUq_o HTTP/1.1
 
 
 ### Create new dogs
-POST {{host}}/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImVtZW0iLCJpZCI6MTAwLCJleHAiOjE2NTI5MzkxNjF9.BE-KrzczQrPR7Ba2_pHTakF7ae29IEXXeEXMDGqUq_o HTTP/1.1
+POST {{host}}/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2…1ODF9.QLpr_WgrQs4DJcRT1wFKyx1urJre9cnhxBO09JYvbt4 HTTP/1.1
 Content-Type: application/json
 
 {
     "id": 1,
-    "name": "Blackie"
+    "name": "123"
 }
 
 

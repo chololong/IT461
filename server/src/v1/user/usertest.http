@@ -1,0 +1,35 @@
+@host = http://127.0.0.1:8080/v1/users
+
+GET {{host}}/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOjEwMCwiZXhwIjoxNjUzODQxNDM1fQ.ott65W-ttB5efGrm2PFjSDepk9zBqrZo6IwWAa16sNE HTTP/1.1
+
+
+###
+POST {{host}}/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImVtZW0iLCJpZCI6MTAwLCJleHAiOjE2NTM4NDEyMDR9.djJijeA2eU_K4GdwU3i1xo7GqH0PO8NvXrMkBJTSiWs HTTP/1.1
+Content-Type: application/json
+
+{
+    "id" : 5,
+    "username" : "kandt",
+    "password" : "kandt"
+}
+
+
+###
+PUT {{host}}/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "id" : 3,
+    "username" : "elton",
+    "password" : "john"
+}
+
+
+### 
+DELETE {{host}}/ HTTP/1.1
+Content-Type: application/json
+
+[5]
+
+###
+GET {{host}}/?fields=username HTTP/1.1

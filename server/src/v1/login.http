@@ -6,11 +6,11 @@ POST {{host}}/login HTTP/1.1
 Content-Type: application/json
 
 {
-  "username": "emem",
-  "password": "kandt123"
+  "username": "admin",
+  "password": "admin"
 }
 
 
 ### Token verification
-GET {{host}}/verify-token?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImVtZW0iLCJpZCI6MTAwLCJleHAiOjE2NTI5MzkxNjF9.BE-KrzczQrPR7Ba2_pHTakF7ae29IEXXeEXMDGqUq_o HTTP/1.1
+GET {{host}}/verify-token?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImVtZW0iLCJpZCI6MTAwLCJleHAiOjE2NTM3NjQyMTZ9.Gr7QSMqxvg-l3RUqenBh-qAm6LMA3S6CHqo2-LsyfJI HTTP/1.1
 
